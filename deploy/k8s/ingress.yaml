@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-front-admin
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    acme.cert-manager.io/http01-edit-in-place: "true"
+spec:
+  rules:
+  - host: prueba.lumonidy.studio
+    http:
+      paths:
+      - backend:
+          service:
+            name: front-admin-svc
+            port:
+              number: 80
+        pathType: Prefix
+        path: /
+  tls:
+  - hosts: 
+    - prueba.luminody.studio
+    secretName: prueba-tls

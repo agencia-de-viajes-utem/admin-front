@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-admin  # Cambia el nombre del Deployment a "front-admin"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: front-admin  # Cambia la etiqueta del selector para que coincida con el nuevo nombre
+  template:
+    metadata:
+      labels:
+        app: front-admin  # Cambia la etiqueta en la plantilla para que coincida con el nuevo nombre
+    spec:
+      containers:
+      - name: front-admin-svc
+        image: gcr.io/annular-form-401215/gcr-alpine:{GITHUB_SHA}
+        ports:
+        - containerPort: 3000

@@ -1,0 +1,59 @@
+:root {
+    --anchoUsuarioCard: 100%;
+    --color-usuarioCard: #fff;
+    --color-shadow: rgba(6, 24, 44, 0.4);
+    --color-shadow-hover: rgba(173, 216, 230, 0.8);
+    --color-shadow-inset: rgba(255, 255, 255, 0.08);
+    --color-shadow-inset-hover: rgba(255, 255, 255, 0.1);
+    --color-text: #000;
+    --font-size: 1.6rem;
+    --font-weight: 600;
+}
+
+.usuarioCard {
+    position: relative;
+    background: var(--color-usuarioCard);
+    width: 100%;
+    height: 100%;
+    border-radius: 4.875rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: var(--color-shadow) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, var(--color-shadow-inset) 0px 1px 0px inset;
+    transition: all 0.3s ease-in-out;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.usuarioCard img {
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    margin: -0.4rem;
+    aspect-ratio: 1;
+    border-radius: 4rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.usuarioCard:hover {
+    cursor: pointer;
+    box-shadow: var(--color-shadow-hover) 0px 0px 0px 2px, rgba(173, 216, 230, 0.9) 0px 4px 6px -1px, var(--color-shadow-inset-hover) 0px 1px 0px inset;
+    transform: translateY(-1px);
+}
+
+
+
+.usuarioCardInfo {
+    font-size: var(--font-size);
+    color: var(--color-text);
+}
+
+.nombre {
+    font-weight: var(--font-weight);
+}
+
+.usuarioCard.seleccionado {
+    background-color: lightblue;
+    opacity: 0.5;
+    /* Cambia esto a tu color de fondo deseado */
+}
