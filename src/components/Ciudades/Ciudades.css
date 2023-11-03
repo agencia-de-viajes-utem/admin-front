@@ -1,0 +1,88 @@
+.ciudadTitle {
+    background: orange;
+    margin: -1rem -2rem -1rem -2rem;
+    position: relative;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.ciudadTitle h1 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.filtro-container {
+    display: inline-flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nameSearch {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nameSearch input {
+    margin-bottom: 1rem;
+    border: 0;
+    padding: 0.45rem;
+    border-radius: 0.4rem;
+}
+
+.ciudadDetalle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.ciudadDetailModule {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 80%;
+}
+.ciudadDetailModule p{
+    margin: 0;
+}
+
+.ciudadDetailModule input {
+    margin-bottom: 1rem;
+    border: 1px solid;
+    border-color: black;
+    background: rgb(209, 209, 209);
+    color: rgb(95, 95, 95);
+    padding: 0.45rem;
+    border-radius: 0.4rem;
+    flex: 1;
+}
+
+.ciudadDetailInput {
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem;
+}
+
+.ciudadDetailEditButton img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.ciudadDetailEditButton:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.ciudadLista {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    height: 65vh;
+    overflow: auto;
+    justify-items: center;
+    gap: 1rem;
+}
