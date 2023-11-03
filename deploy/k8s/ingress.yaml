@@ -19,7 +19,7 @@ spec:
               number: 80
         pathType: Prefix
         path: /
-  tls:
-  - hosts: 
-    - front.lumonidy.studio
-    secretName: front-1-tls
+  #tls:
+  #- hosts: 
+  #  - front.lumonidy.studio
+  #  secretName: front-1-tls
