@@ -9,12 +9,12 @@ metadata:
     acme.cert-manager.io/http01-edit-in-place: "true"
 spec:
   rules:
-  - host: front.lumonidy.studio
+  - host: fron.lumonidy.studio
     http:
       paths:
       - backend:
           service:
-            name: front-admin-svc
+            name: fron-admin-svc
             port:
               number: 80
         pathType: Prefix
