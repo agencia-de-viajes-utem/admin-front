@@ -9,7 +9,7 @@ metadata:
     acme.cert-manager.io/http01-edit-in-place: "true"
 spec:
   rules:
-  - host: prueba.lumonidy.studio
+  - host: front.lumonidy.studio
     http:
       paths:
       - backend:
@@ -21,5 +21,5 @@ spec:
         path: /
   tls:
   - hosts: 
-    - prueba.lumonidy.studio
-    secretName: prueba-tls
+    - front.lumonidy.studio
+    secretName: front-1-tls
