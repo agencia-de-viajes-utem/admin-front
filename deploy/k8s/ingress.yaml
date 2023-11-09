@@ -20,6 +20,6 @@ spec:
         pathType: Prefix
         path: /
   #tls:
-  #- hosts: 
-  #  - front.lumonidy.studio
-  #  secretName: front-1-tls
+  - hosts: 
+    - fron.lumonidy.studio
+    secretName: front-1-tls
